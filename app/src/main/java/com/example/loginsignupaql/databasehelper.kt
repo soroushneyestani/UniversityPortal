@@ -19,10 +19,10 @@ class databasehelper(private val context: Context):
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
-      val createTableQuery = ("CREATE TABLE $TABLE_NAME (" +
-              "$COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
-              "$COLUMN_USERNAME TEXT, " +
-              "$COLUMN_PASSWORD TEXT)")
+        val createTableQuery = ("CREATE TABLE $TABLE_NAME (" +
+                "$COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "$COLUMN_USERNAME TEXT, " +
+                "$COLUMN_PASSWORD TEXT)")
         db?.execSQL(createTableQuery)
     }
 
